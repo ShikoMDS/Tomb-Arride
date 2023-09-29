@@ -16,7 +16,7 @@ Repository created by (Team Name) for GDV110 Game Design Principles Assessment 3
 
 ## Description
 
-Inset description here.  
+2D Top-down Sokoban shooter puzzle game.  
 
 
 ## Features
