@@ -3,7 +3,9 @@
   "resourceVersion": "1.6",
   "name": "Tomb Arride",
   "resources": [
+    {"id":{"name":"Fnt_Menu","path":"fonts/Fnt_Menu/Fnt_Menu.yy",},"order":0,},
     {"id":{"name":"Smiley","path":"sprites/Smiley/Smiley.yy",},"order":0,},
+    {"id":{"name":"Obj_Menu_Manager","path":"objects/Obj_Menu_Manager/Obj_Menu_Manager.yy",},"order":0,},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":0,},
   ],
   "Options": [
@@ -11,7 +13,7 @@
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
