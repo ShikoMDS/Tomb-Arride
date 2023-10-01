@@ -3,7 +3,7 @@
   "resourceVersion": "1.6",
   "name": "Tomb Arride",
   "resources": [
-    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
+    {"id":{"name":"Smiley","path":"sprites/Smiley/Smiley.yy",},"order":0,},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":0,},
   ],
   "Options": [
