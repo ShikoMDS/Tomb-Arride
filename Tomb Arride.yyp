@@ -4,6 +4,7 @@
   "name": "Tomb Arride",
   "resources": [
     {"id":{"name":"Smiley","path":"sprites/Smiley/Smiley.yy",},"order":0,},
+    {"id":{"name":"Smiley2","path":"sprites/Smiley2/Smiley2.yy",},"order":1,},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":0,},
   ],
   "Options": [
