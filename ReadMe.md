@@ -27,7 +27,7 @@ Repository created by (Team Name) for GDV110 Game Design Principles Assessment 3
 ## Requirements
 
 - Windows based system
-- GameMaker Studio 2 LTS
+- GameMaker LTS
 
 
 ## Installation
@@ -42,7 +42,7 @@ Repository created by (Team Name) for GDV110 Game Design Principles Assessment 3
 
 ## Disclaimer
 
-This is currently under team source control testing by Shiko.  
+
 
 
 ## Credits
