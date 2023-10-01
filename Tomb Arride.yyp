@@ -5,7 +5,6 @@
   "resources": [
     {"id":{"name":"Fnt_Menu","path":"fonts/Fnt_Menu/Fnt_Menu.yy",},"order":0,},
     {"id":{"name":"Smiley","path":"sprites/Smiley/Smiley.yy",},"order":0,},
-    {"id":{"name":"Smiley2","path":"sprites/Smiley2/Smiley2.yy",},"order":1,},
     {"id":{"name":"Obj_Menu_Manager","path":"objects/Obj_Menu_Manager/Obj_Menu_Manager.yy",},"order":0,},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},"order":0,},
   ],
