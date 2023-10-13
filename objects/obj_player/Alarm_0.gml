@@ -1,0 +1,1 @@
+bCanShoot = true;
