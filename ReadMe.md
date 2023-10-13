@@ -48,7 +48,6 @@ This is currently under team source control testing by Shiko.
 ## Credits
 
 (Team Name) 2023
-- Chloe
 - Toby
 - Reuben
 - Chris
