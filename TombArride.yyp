@@ -13,6 +13,7 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":8,},
     {"id":{"name":"obj_wall_broken","path":"objects/obj_wall_broken/obj_wall_broken.yy",},"order":9,},
     {"id":{"name":"obj_wall_broken2","path":"objects/obj_wall_broken2/obj_wall_broken2.yy",},"order":10,},
+    {"id":{"name":"PlayerControl","path":"scripts/PlayerControl/PlayerControl.yy",},"order":0,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":1,},
     {"id":{"name":"obj_gamemanager","path":"objects/obj_gamemanager/obj_gamemanager.yy",},"order":4,},
     {"id":{"name":"obj_goal","path":"objects/obj_goal/obj_goal.yy",},"order":7,},
@@ -32,7 +33,7 @@
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
   ],
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "isEcma": false,
   "configs": {
     "name": "Default",
@@ -66,6 +67,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.0.0.19",
+    "IDEVersion": "2022.0.2.51",
   },
 }
