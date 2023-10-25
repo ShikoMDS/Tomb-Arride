@@ -22,6 +22,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
+    {"id":{"name":"rm_mainLvl_69","path":"rooms/rm_mainLvl_69/rm_mainLvl_69.yy",},"order":3,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":2,},
     {"id":{"name":"spr_mummy","path":"sprites/spr_mummy/spr_mummy.yy",},"order":2,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":0,},
@@ -44,6 +45,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_mainLvl_69","path":"rooms/rm_mainLvl_69/rm_mainLvl_69.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
