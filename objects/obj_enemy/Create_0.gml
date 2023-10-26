@@ -8,3 +8,5 @@ choose_direction_timer = 0;
 choose_direction_timer_tick = choose_direction_timer;
 
 bShot = false;
+
+depth = -11;

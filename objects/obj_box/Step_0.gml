@@ -1,99 +1,43 @@
-if (boxLocked == false)
+#region//Box Movement Code
+
+if (place_snapped(16,16))
 {
-	if (up == false && down == false && left == false && right == false)
+	speed = 0;
+}
+
+if (!box_locked)
+{
+	if (keyboard_check_pressed(vk_space))
 	{
-		if place_meeting(x + 10, y, obj_player)
+		if (place_meeting(x - 10, y, obj_player))
 		{
-			if (keyboard_check_pressed(vk_space))
-			{
-				if !place_meeting(x - 10, y, obj_wall)
-				{
-					left = true;
-					currentX = x;
-					currentY = y;
-				}
-			}    
+			direction = 0;
+			speed = move_spd;
 		}
-		if place_meeting(x - 10, y, obj_player)
+		
+		if (place_meeting(x + 10, y, obj_player))
 		{
-		    if (keyboard_check_pressed(vk_space))
-		    {
-				if !place_meeting(x + 10, y, obj_wall)
-				{
-					right = true;
-					currentX = x;
-					currentY = y;
-				}
-		    }
+			direction = -180;
+			speed = move_spd;
 		}
-		if place_meeting(x, y + 10, obj_player)
+		
+		if (place_meeting(x, y + 10, obj_player))
 		{
-		    if (keyboard_check_pressed(vk_space))
-		    {
-				if !place_meeting(x, y - 10, obj_wall)
-				{
-					up = true;
-					currentX = x;
-					currentY = y;
-				}
-		    }
+			direction = 90;
+			speed = move_spd;
 		}
-		if place_meeting(x, y - 10, obj_player)
+		
+		if (place_meeting(x, y - 10, obj_player))
 		{
-		    if (keyboard_check_pressed(vk_space))
-		    {
-				if !place_meeting(x, y + 10, obj_wall)
-				{
-					down = true;
-					currentX = x;
-					currentY = y;
-				}
-		    }
+			direction = -90;
+			speed = move_spd;
 		}
 	}
 }
 
-if (up == true)
+if (place_meeting(x, y, obj_goal_parent))
 {
-	move_towards_point(currentX, currentY - 16, 2)
-	if (x == currentX && y == (currentY - 16))
-	{
-		speed = 0;
-		up = false;
-	}
-}
-	
-if (down == true)
-{
-	move_towards_point(currentX, currentY + 16, 2)
-	if (x == currentX && y == (currentY + 16))
-	{
-		speed = 0;
-		down = false;
-	}
-}
-	
-if (left == true)
-{
-	move_towards_point(currentX - 16, currentY, 2)
-	if (x == (currentX - 16) && y == currentY)
-	{
-		speed = 0;
-		left = false;
-	}
-}
-	
-if (right == true)
-{
-	move_towards_point(currentX + 16, currentY, 2)
-	if (x == (currentX + 16) && y == currentY)
-	{
-		speed = 0;
-		right = false;
-	}
+	box_locked = true;
 }
 
-if (place_meeting(x, y, obj_goal))
-{
-	boxLocked = true;
-}
+#endregion

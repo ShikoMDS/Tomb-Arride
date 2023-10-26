@@ -1,8 +1,10 @@
-//defaults dir = random(360);
-dir = 0;
-spd = 1;
-xspd = 0;
-yspd = 0;
+/// @description Insert description here
+// You can write your code in this editor
 
-//cleanup
-maxdist = 600;
+direction = point_direction(x, y, mouse_x, mouse_y)
+image_angle = direction;
+speed = 10;
+
+
+
+

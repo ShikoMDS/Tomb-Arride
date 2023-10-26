@@ -2,8 +2,7 @@ if (instance_exists(obj_player))
 {
 	if (bShot == false)
 	{
-		if (!collision_line(x,y,obj_player.x, obj_player.y, obj_wall, false, false) &&
-		!collision_line(x,y,obj_player.x, obj_player.y, obj_box, false, false))
+		if (!collision_line(x, y, obj_player.x, obj_player.y, obj_collision_parent, false, false))
 		{
 			bPlayerSeen = true
 		}
@@ -31,7 +30,8 @@ if (xprevious < x)
 {
 	image_xscale = 1;
 }
-else
+
+if (xprevious > x)
 {
 	image_xscale = -1;
 }

@@ -1,11 +1,17 @@
 // restart room
-if (keyboard_check(ord("R")))
+if (keyboard_check_pressed(ord("R")))
 {
 	room_restart();
 }
 
-if (instance_number(obj_goal) == completedGoals)
+if (keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("F")))
 {
-	//room_goto_next()
-	instance_destroy(obj_wall_broken);
+	if (window_get_fullscreen())
+	{
+		window_set_fullscreen(false);
+	}
+	else
+	{
+		window_set_fullscreen(true);
+	}
 }

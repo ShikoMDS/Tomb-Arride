@@ -1,8 +1,5 @@
-up = false;
-down = false;
-left = false;
-right = false;
 
-boxLocked = false;
-currentX = 0;
-currentY = 0;
+move_spd = 2;
+box_locked = false;
+
+depth = -10;
