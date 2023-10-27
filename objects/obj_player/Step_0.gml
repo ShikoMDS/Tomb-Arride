@@ -67,6 +67,6 @@ if (!GamePaused)
 	
     
 		bCanShoot = false;
-	    alarm[0] = 20;
+	    alarm[0] = 5; // Was 20
 	}
 }

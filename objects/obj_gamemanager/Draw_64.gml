@@ -28,7 +28,7 @@ if (GamePaused)
 	
 	if (keyboard_check_pressed(vk_escape))
 	{
-		room_goto(Menu);
+		room_goto(rm_menu);
 	}
 	
 }

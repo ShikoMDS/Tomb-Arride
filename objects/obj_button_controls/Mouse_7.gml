@@ -9,4 +9,4 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(Controls);
+room_goto(rm_controls);

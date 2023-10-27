@@ -18,16 +18,11 @@ if (keyboard_check_pressed(ord("R")))
 
 if (instance_number(obj_goal_parent) == GoalsCompleted)
 {
-	if (NextLevelDelay <= 0)
+	with (instance_create_layer(0, 0, "Instances", obj_fade_control))
 	{
-		if (room != Room2) // TEMPORARY FIX
-		room_goto_next();
+		target_room = rm_level_select;
+		colour = c_black;
 	}
-	NextLevelDelay--
-
-	//
-	// Display choice to replay, quit to main menu, or go to level select\
-	//
 }
 
 if (/*keyboard_check_pressed(vk_escape) || */keyboard_check_pressed(ord("P")))
