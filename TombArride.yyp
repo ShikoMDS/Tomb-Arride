@@ -34,8 +34,10 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":1,},
     {"id":{"name":"spr_wall_03","path":"sprites/spr_wall_03/spr_wall_03.yy",},"order":9,},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
+    {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},"order":16,},
     {"id":{"name":"spr_ground15","path":"sprites/spr_ground15/spr_ground15.yy",},"order":14,},
     {"id":{"name":"obj_menu_manager","path":"objects/obj_menu_manager/obj_menu_manager.yy",},"order":0,},
+    {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":17,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":1,},
     {"id":{"name":"Pixeled","path":"fonts/Pixeled/Pixeled.yy",},"order":0,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":2,},
@@ -89,6 +91,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Pixeled.ttf","CopyToMask":3035426170322551022,"filePath":"datafiles",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.0.2.51",
+    "IDEVersion": "2022.0.0.19",
   },
 }
