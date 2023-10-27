@@ -4,7 +4,7 @@
 if (FontMenuTitle != -1) 
 {
     // Set the text color to RGB values for gold
-    draw_set_color(col_Gold);
+    draw_set_color(ColGold);
 
     // Set the font
     draw_set_font(FontMenuTitle);
