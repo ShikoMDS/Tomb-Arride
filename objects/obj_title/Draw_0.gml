@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (FontMenuTitle != -1) 
+/* if (FontMenuTitle != -1) 
 {
     // Set the text color to RGB values for gold
     draw_set_color(ColGold);
