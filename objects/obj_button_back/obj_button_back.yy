@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_button_back",
   "spriteId": {
-    "name": "spr_menu_button",
-    "path": "sprites/spr_menu_button/spr_menu_button.yy",
+    "name": "spr_BACK",
+    "path": "sprites/spr_BACK/spr_BACK.yy",
   },
   "solid": false,
   "visible": true,

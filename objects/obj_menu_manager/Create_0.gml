@@ -18,3 +18,9 @@ ColGold = make_color_rgb(255, 215, 0); // Create a colour variable for custom co
 globalvar FullScreen;
 FullScreen = true;
 
+
+globalvar GamePaused;
+GamePaused = false;
+
+globalvar tutorial_number;
+tutorial_number = 1;

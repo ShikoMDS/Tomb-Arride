@@ -1,6 +1,7 @@
 if (!GamePaused)
 {
 	drawCoinsScore();
+	drawLevelsCompleted();
 }
 
 if (GamePaused)

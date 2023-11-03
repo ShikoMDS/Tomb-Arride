@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_button_quit",
   "spriteId": {
-    "name": "spr_menu_button",
-    "path": "sprites/spr_menu_button/spr_menu_button.yy",
+    "name": "spr_QUIT",
+    "path": "sprites/spr_QUIT/spr_QUIT.yy",
   },
   "solid": false,
   "visible": true,
