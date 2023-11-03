@@ -249,6 +249,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EDE33D4","properties":[],"isDnd":false,"objectId":{"name":"obj_wall_broken_02","path":"objects/obj_wall_broken_02/obj_wall_broken_02.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":200.0,"y":72.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5978EB3E","properties":[],"isDnd":false,"objectId":{"name":"obj_wall_broken_02","path":"objects/obj_wall_broken_02/obj_wall_broken_02.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":200.0,"y":56.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30171443","properties":[],"isDnd":false,"objectId":{"name":"obj_wall_broken_02","path":"objects/obj_wall_broken_02/obj_wall_broken_02.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":200.0,"y":40.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3951E2E7","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":16.0,"y":64.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FE33F4","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":128.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B5B9031","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":144.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","tilesetId":{"name":"ts_ground","path":"tilesets/ts_ground/ts_ground.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":31,"SerialiseHeight":16,"TileCompressedData":[
 -32,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,1,-2,-2147483648,-29,
@@ -259,7 +262,6 @@
   "creationCodeFile": "rooms/Room2/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_1A732C23","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_53562126","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_410D3377","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_679B135C","path":"rooms/Room2/Room2.yy",},
@@ -491,6 +493,10 @@
     {"name":"inst_4EDE33D4","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_5978EB3E","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_30171443","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_3951E2E7","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_2FE33F4","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_4B5B9031","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_1A732C23","path":"rooms/Room2/Room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
