@@ -21,8 +21,9 @@ if (instance_number(obj_goal_parent) == GoalsCompleted)
 	with (instance_create_layer(0, 0, "Instances", obj_fade_control))
 	{
 		target_room = rm_level_select;
-		colour = c_black;
+		colour = c_black;	
 	}
+	obj_save_manager.addLevelCompleted();
 }
 
 if (/*keyboard_check_pressed(vk_escape) || */keyboard_check_pressed(ord("P")))

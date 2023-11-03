@@ -51,6 +51,7 @@
     {"id":{"name":"spr_wall_01","path":"sprites/spr_wall_01/spr_wall_01.yy",},"order":8,},
     {"id":{"name":"obj_goal_01","path":"objects/obj_goal_01/obj_goal_01.yy",},"order":7,},
     {"id":{"name":"obj_TitleImage_01","path":"objects/obj_TitleImage_01/obj_TitleImage_01.yy",},"order":8,},
+    {"id":{"name":"obj_save_manager","path":"objects/obj_save_manager/obj_save_manager.yy",},"order":6,},
     {"id":{"name":"spr_goal_01","path":"sprites/spr_goal_01/spr_goal_01.yy",},"order":13,},
     {"id":{"name":"spr_CONTROLS","path":"sprites/spr_CONTROLS/spr_CONTROLS.yy",},"order":2,},
     {"id":{"name":"spr_tut_goal_01","path":"sprites/spr_tut_goal_01/spr_tut_goal_01.yy",},"order":26,},
