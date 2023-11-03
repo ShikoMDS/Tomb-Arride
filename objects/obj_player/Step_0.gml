@@ -70,3 +70,5 @@ if (!GamePaused)
 	    alarm[0] = 5; // Was 20
 	}
 }
+
+global.teleporting = false;

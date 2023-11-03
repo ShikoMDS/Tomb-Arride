@@ -11,4 +11,4 @@ draw_set_color(colour);
 draw_rectangle(0,0,_gui_w,_gui_h,0);
 
 draw_set_alpha(1);
-draw_set_color(c_white);
+draw_set_color(c_black);

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_button_controls",
   "spriteId": {
-    "name": "spr_menu_button",
-    "path": "sprites/spr_menu_button/spr_menu_button.yy",
+    "name": "spr_CONTROLS",
+    "path": "sprites/spr_CONTROLS/spr_CONTROLS.yy",
   },
   "solid": false,
   "visible": true,
