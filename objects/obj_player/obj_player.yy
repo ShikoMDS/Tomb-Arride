@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Main",
-    "path": "folders/Objects/Main.yy",
+    "name": "level Components",
+    "path": "folders/Objects/level Components.yy",
   },
 }

@@ -16,26 +16,38 @@ if (keyboard_check_pressed(ord("R")))
 //	}
 //}
 
-if (instance_number(obj_goal_parent) == GoalsCompleted)
+if (instance_number(obj_goal_parent) == goals_completed)
 {
-	with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+	if (instance_exists(obj_level_exit))
 	{
-		target_room = rm_level_select;
-		colour = c_black;	
+		obj_level_exit.unlocked = true;
 	}
-	obj_save_manager.addLevelCompleted();
 }
 
-if (/*keyboard_check_pressed(vk_escape) || */keyboard_check_pressed(ord("P")))
+if (keyboard_check_pressed(ord("O")))
 {
-	if (!GamePaused)
+	clear_level_data(level_data);
+}
+
+
+if (room != rm_menu && room != rm_controls && room != rm_credits)
+{
+	if (keyboard_check_pressed(ord("P")))
 	{
-		GamePaused = true;
-		show_debug_message("Game Paused");
-	}
-	else
-	{
-		GamePaused = false;
-		show_debug_message("Game Resumed");
+		if (!GamePaused)
+		{
+			GamePaused = true;
+			show_debug_message("Game Paused");
+			
+			//Create the pause menu button controller 
+			instance_create_layer(0, 0, "Instances", obj_pause_control);
+		}
+		else
+		{
+			GamePaused = false;
+			show_debug_message("Game Resumed");
+			
+			if (instance_exists(obj_pause_control)) instance_destroy(obj_pause_control);
+		}
 	}
 }

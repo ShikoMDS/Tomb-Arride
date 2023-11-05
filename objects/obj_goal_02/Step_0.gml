@@ -7,6 +7,6 @@ if (added == false)
 		{
 			obj_wall_broken_02.image_speed = 1;
 		}
-		obj_gamemanager.GoalsCompleted += 1;
+		obj_gamemanager.goals_completed += 1;
 	}
 }
