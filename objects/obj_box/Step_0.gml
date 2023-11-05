@@ -9,6 +9,8 @@ if (!box_locked)
 {
 	if (keyboard_check_pressed(vk_space))
 	{
+		audio_play_sound(snd_block_push, 1000, false, 0, random_range(0.75, 1.25));
+		
 		if (place_meeting(x - 10, y, obj_player))
 		{
 			direction = 0;

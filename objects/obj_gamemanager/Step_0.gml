@@ -32,11 +32,11 @@ if (keyboard_check_pressed(ord("O")))
 
 if (room != rm_menu && room != rm_controls && room != rm_credits)
 {
-	if (keyboard_check_pressed(ord("P")))
+	if (keyboard_check_pressed(vk_escape))
 	{
-		if (!GamePaused)
+		if (!game_paused)
 		{
-			GamePaused = true;
+			game_paused = true;
 			show_debug_message("Game Paused");
 			
 			//Create the pause menu button controller 
@@ -44,7 +44,7 @@ if (room != rm_menu && room != rm_controls && room != rm_credits)
 		}
 		else
 		{
-			GamePaused = false;
+			game_paused = false;
 			show_debug_message("Game Resumed");
 			
 			if (instance_exists(obj_pause_control)) instance_destroy(obj_pause_control);

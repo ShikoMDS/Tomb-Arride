@@ -1,4 +1,4 @@
-if (!GamePaused)
+if (!game_paused)
 {
 	if (room != rm_menu && room != rm_controls && room != rm_credits)
 	{

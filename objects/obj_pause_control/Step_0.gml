@@ -20,7 +20,7 @@ if (mouse_check_button_released(mb_left))
 {
 	if (point_in_rectangle(_mouse_x, _mouse_y, _x1, _resume_y1, _x2, _resume_y2))
 	{
-		GamePaused = false;
+		game_paused = false;
 		
 		instance_destroy();
 	}
@@ -30,7 +30,7 @@ if (mouse_check_button_released(mb_left))
 	{
 		room_restart();
 		
-		GamePaused = false;
+		game_paused = false;
 	}
 
 

@@ -1,19 +1,19 @@
-if (!GamePaused)
+if (!game_paused)
 {
 	if (instance_exists(obj_player))
 	{
-		if (bShot == false)
+		if (b_shot == false)
 		{
 			if (!collision_line(x, y, obj_player.x, obj_player.y, obj_collision_parent, false, false))
 			{
-				bPlayerSeen = true
+				b_player_seen = true
 			}
 			else
 			{
-				bPlayerSeen = false;
+				b_player_seen = false;
 				if (choose_direction_timer_tick <= 0)
 				{
-					mp_potential_step(RangeX, RangeY, 0.5, false);
+					mp_potential_step(range_x, range_y, 0.5, false);
 				
 					choose_direction_timer_tick = choose_direction_timer;
 					alarm[0] = 1.25 * room_speed;
@@ -21,7 +21,7 @@ if (!GamePaused)
 				choose_direction_timer_tick--;
 			}
 
-			if (bPlayerSeen == true)
+			if (b_player_seen == true)
 			{
 				mp_potential_step(obj_player.x,obj_player.y,0.5,false);
 			}

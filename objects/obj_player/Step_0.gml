@@ -1,6 +1,6 @@
 #region//Player Movement
 
-if (!GamePaused)
+if (!game_paused)
 {
 	var _up = (keyboard_check(ord("W")) || keyboard_check(vk_up));
 	var _left = (keyboard_check(ord("A")) || keyboard_check(vk_left));
@@ -37,7 +37,7 @@ if (!GamePaused)
 
 #region//Sprite Control
 
-if (!GamePaused)
+if (!game_paused)
 {
 	if (_left)
 	{
@@ -51,9 +51,9 @@ if (!GamePaused)
 }
 
 #endregion
-if (!GamePaused)
+if (!game_paused)
 {
-	if (mouse_check_button(mb_left) && bCanShoot)
+	if (mouse_check_button(mb_left) && b_can_shoot)
 	{
 	    //with instance_create_layer(x,y,layer,obj_bullet)
 	    //{
@@ -64,9 +64,9 @@ if (!GamePaused)
 	
 		instance_create_layer(x, y, "Instances", obj_bullet);
 	
-	
+		audio_play_sound(snd_shoot, 1, false, 0, random_range(0.75, 1.25));
     
-		bCanShoot = false;
+		b_can_shoot = false;
 	    alarm[0] = 5; // Was 20
 	}
 }

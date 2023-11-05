@@ -1,1 +1,1 @@
-bCanShoot = true;
+b_can_shoot = true;

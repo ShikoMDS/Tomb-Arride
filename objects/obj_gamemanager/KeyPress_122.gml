@@ -1,13 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if(FullScreen == true)
+if(fullscreen == true)
 {
 	window_set_fullscreen(0);
-    FullScreen = false;
+    fullscreen = false;
 }
 else
 {
 	window_set_fullscreen(1);
-    FullScreen = true;
+    fullscreen = true;
 }
