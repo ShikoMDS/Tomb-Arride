@@ -1,3 +1,3 @@
 
-obj_gamemanager.Coins++;
+obj_gamemanager.coins++;
 instance_destroy();

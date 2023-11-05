@@ -11,6 +11,3 @@ else
 	window_set_fullscreen(1);
     FullScreen = true;
 }
-
-
-

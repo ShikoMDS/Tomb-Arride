@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_button_play",
   "spriteId": {
-    "name": "spr_PLAY",
-    "path": "sprites/spr_PLAY/spr_PLAY.yy",
+    "name": "spr_menu_button",
+    "path": "sprites/spr_menu_button/spr_menu_button.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"value":"Play",},
   ],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/Menu.yy",
+    "name": "Menu Buttons",
+    "path": "folders/Objects/Menu Buttons.yy",
   },
 }
