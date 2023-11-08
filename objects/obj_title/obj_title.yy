@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_title",
   "spriteId": {
-    "name": "spr_title_test",
-    "path": "sprites/spr_title_test/spr_title_test.yy",
+    "name": "spr_title",
+    "path": "sprites/spr_title/spr_title.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,13 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu Buttons",
-    "path": "folders/Objects/Menu Buttons.yy",
+    "name": "Menu",
+    "path": "folders/Objects/Menu.yy",
   },
 }

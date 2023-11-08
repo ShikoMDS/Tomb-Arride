@@ -36,6 +36,8 @@ if (mouse_check_button_released(mb_left))
 
 	if (point_in_rectangle(_mouse_x, _mouse_y, _x1, _menu_y1, _x2, _menu_y2))
 	{
+		game_paused = false;
+		
 		with (instance_create_layer(x, y, "Instances", obj_fade_control))
 		{
 			target_room = rm_menu;

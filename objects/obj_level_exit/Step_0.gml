@@ -10,10 +10,29 @@ if (unlocked)
 			obj_player.x = x;
 			obj_player.y = y;
 			
-			with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+			if (room != rm_tutorial_1 && room != rm_tutorial_2 && room != rm_tutorial_3)
 			{
-				target_room = rm_level_select;
-				colour = c_black;	
+				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+				{
+					target_room = rm_level_select;
+					colour = c_black;	
+				}
+			}
+			else if (room == rm_tutorial_1 || room == rm_tutorial_2)
+			{
+				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+				{
+					target_room = room_next(room);
+					colour = c_black;	
+				}
+			}
+			else if (room == rm_tutorial_3)
+			{
+				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+				{
+					target_room = rm_menu;
+					colour = c_black;
+				}
 			}
 		}
 	}

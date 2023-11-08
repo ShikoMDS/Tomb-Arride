@@ -28,7 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ff647a7d-4d8c-410f-b0f5-b1e18a2f96c7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"044d4860-ae9d-437f-9f9a-e9db62df03e7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e98877f6-657c-4a29-af3d-a91c88bd42ef",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c36c177-074f-4c7e-ab89-8db103ae9561",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"66c605f1-f827-4fdf-b988-c8e38ea48b8a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"861eef1b-7393-426e-910a-323b06f4df40",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d88f362-8e8d-45dc-acc3-5cd19ab00909",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -36,16 +41,21 @@
     "name": "spr_teleport",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 20.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9c1280e2-34a8-41a0-b7d6-250153db3d2e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff647a7d-4d8c-410f-b0f5-b1e18a2f96c7","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"94aeacdc-19bb-4ead-8448-d4060ac0db6a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"044d4860-ae9d-437f-9f9a-e9db62df03e7","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b215af91-2c50-480f-9023-ac5bf62c47b2","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e98877f6-657c-4a29-af3d-a91c88bd42ef","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e9368e94-0ada-458f-b010-b0f8648d710f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7c36c177-074f-4c7e-ab89-8db103ae9561","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8fc507c0-6142-4971-b066-8659c179faab","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"66c605f1-f827-4fdf-b988-c8e38ea48b8a","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5217a3ae-086c-4143-bcb3-a8a815cdf494","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"861eef1b-7393-426e-910a-323b06f4df40","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d88cbb06-e42e-4acb-9ef5-71ea4b765363","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d88f362-8e8d-45dc-acc3-5cd19ab00909","path":"sprites/spr_teleport/spr_teleport.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,11 +74,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0fa8778e-8163-4aa5-beeb-ec062f32f08f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6bad3b14-d005-454a-97fe-8aef2b276ecb","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Teleport",
-    "path": "folders/Sprites/Teleport.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
 }

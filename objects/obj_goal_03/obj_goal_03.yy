@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "level Components",
-    "path": "folders/Objects/level Components.yy",
+    "name": "Goals",
+    "path": "folders/Objects/level Components/Goals.yy",
   },
 }

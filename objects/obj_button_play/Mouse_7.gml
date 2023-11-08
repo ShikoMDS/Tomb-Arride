@@ -1,5 +1,4 @@
 
-
 if (is_clicked)
 {
 	if (!instance_exists(obj_fade_control))

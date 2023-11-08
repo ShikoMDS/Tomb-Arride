@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "level Components",
-    "path": "folders/Objects/level Components.yy",
+    "name": "Broken Walls",
+    "path": "folders/Objects/level Components/Broken Walls.yy",
   },
 }

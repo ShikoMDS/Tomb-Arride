@@ -35,7 +35,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"value":"Credits",},
   ],
   "parent": {
-    "name": "Menu Buttons",
-    "path": "folders/Objects/Menu Buttons.yy",
+    "name": "Menu",
+    "path": "folders/Objects/Menu.yy",
   },
 }

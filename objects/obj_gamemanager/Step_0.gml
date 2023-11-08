@@ -1,20 +1,37 @@
-// restart room
-if (keyboard_check_pressed(ord("R")))
+
+#region//Fullscreen Control
+
+
+if (keyboard_check_pressed(vk_f11))
 {
+	if (window_get_fullscreen())
+	{
+		window_set_fullscreen(false);
+	}
+	else
+	{
+		window_set_fullscreen(true);
+	}
+}
+
+
+#endregion
+
+#region//Clear Level Data
+
+
+if (keyboard_check_pressed(ord("O")))
+{
+	clear_level_data(global.level_data);
+	
 	room_restart();
 }
 
-//if (keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("F")))
-//{
-//	if (window_get_fullscreen())
-//	{
-//		window_set_fullscreen(false);
-//	}
-//	else
-//	{
-//		window_set_fullscreen(true);
-//	}
-//}
+
+#endregion
+
+#region//Exit Control
+
 
 if (instance_number(obj_goal_parent) == goals_completed)
 {
@@ -24,10 +41,10 @@ if (instance_number(obj_goal_parent) == goals_completed)
 	}
 }
 
-if (keyboard_check_pressed(ord("O")))
-{
-	clear_level_data(level_data);
-}
+
+#endregion
+
+#region//Pause Control
 
 
 if (room != rm_menu && room != rm_controls && room != rm_credits)
@@ -51,3 +68,23 @@ if (room != rm_menu && room != rm_controls && room != rm_credits)
 		}
 	}
 }
+
+
+#endregion
+
+#region//Music Control
+
+	
+if (!audio_is_playing(snd_background_music))
+{
+	audio_play_sound(snd_background_music, 1, true);
+}
+
+
+if (room != rm_level_select)
+{
+	if (audio_is_playing(snd_dance_music)) audio_stop_sound(snd_dance_music);
+}
+
+
+#endregion
