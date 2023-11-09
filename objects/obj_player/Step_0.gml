@@ -69,13 +69,6 @@ if (!game_paused)
 
 	if (mouse_check_button(mb_left) && b_can_shoot)
 	{
-	    //with instance_create_layer(x,y,layer,obj_bullet)
-	    //{
-	    //    speed = 10;
-	    //    direction = point_direction(x,y,mouse_x,mouse_y);
-	    //    image_angle = direction;
-	    //}    
-	
 		instance_create_layer(x, y, "Instances", obj_bullet);
 	
 		audio_play_sound(snd_shoot, 1, false, 1, 0, random_range(0.75, 1.25));
@@ -119,4 +112,17 @@ if (!game_paused)
 			alarm[1] = invincibility_time;
 		}
 	}
+}
+
+if (game_paused)
+{
+	image_speed = 0;
+	audio_stop_sound(snd_player_walk);
+	audio_stop_sound(snd_box_push);
+	audio_stop_sound(snd_coin_pickup);
+	audio_stop_sound(snd_mummy_hit);
+	audio_stop_sound(snd_player_hit);
+	audio_stop_sound(snd_player_teleport);
+	audio_stop_sound(snd_shoot);
+	audio_stop_sound(snd_squish);
 }

@@ -23,8 +23,11 @@ if (keyboard_check_pressed(vk_f11))
 if (keyboard_check_pressed(ord("O")))
 {
 	clear_level_data(global.level_data);
-	
-	room_restart();
+	with (instance_create_layer(0, 0, "Instances", obj_fade_control))
+	{
+		target_room = rm_level_select;
+		colour = c_black;	
+	}
 }
 
 
@@ -74,17 +77,9 @@ if (room != rm_menu && room != rm_controls && room != rm_credits)
 
 #region//Music Control
 
-	
-if (!audio_is_playing(snd_background_music))
-{
-	audio_play_sound(snd_background_music, 1, true);
-}
-
-
 if (room != rm_level_select)
 {
 	if (audio_is_playing(snd_dance_music)) audio_stop_sound(snd_dance_music);
 }
-
 
 #endregion

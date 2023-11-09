@@ -94,7 +94,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Sprites/Buttons.yy",
+    "name": "Menu",
+    "path": "folders/Sprites/Menu.yy",
   },
 }
