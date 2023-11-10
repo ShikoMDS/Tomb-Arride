@@ -55,7 +55,7 @@ function draw_coin_score()
 
 	draw_text(80, 10, coins);
 
-	draw_sprite_ext(spr_coin, 0, 25, 25, 4, 4, 0, c_white, 1);
+	draw_sprite_ext(spr_coin, 0, 40, 40, 4, 4, 0, c_white, 1);
 }
 
 

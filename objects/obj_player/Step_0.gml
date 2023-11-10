@@ -67,14 +67,29 @@ if (!game_paused)
 	}
 
 
-	if (mouse_check_button(mb_left) && b_can_shoot)
+	if (mouse_check_button(mb_left) && b_can_shoot && ammo > 0)
 	{
-		instance_create_layer(x, y, "Instances", obj_bullet);
+		instance_create_layer(x, y + 3, "Instances", obj_bullet);
 	
 		audio_play_sound(snd_shoot, 1, false, 1, 0, random_range(0.75, 1.25));
     
+		ammo--;
+	
 		b_can_shoot = false;
-	    alarm[0] = 30; // Was 20
+	    alarm[0] = 15;
+	}
+	
+	if (ammo < ammo_max)
+	{
+		if (ammo_regen < ammo_regen_time)
+		{
+			ammo_regen++;
+		}
+		else
+		{
+			ammo++;
+			ammo_regen = 0;
+		}
 	}
 	
 	if (hp <= 0)

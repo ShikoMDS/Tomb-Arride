@@ -10,6 +10,13 @@ invincibility_time = 60;
 
 frozen = false;
 
+ammo_max = 3;
+
+ammo = ammo_max;
+
+ammo_regen = 0;
+ammo_regen_time = 120;
+
 move_spd = 2;
 
 depth = -12;
