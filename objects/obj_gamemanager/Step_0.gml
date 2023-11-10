@@ -1,6 +1,8 @@
 
 #region//Fullscreen Control
 
+// volume
+audio_master_gain(global.volume_percent)
 
 if (keyboard_check_pressed(vk_f11))
 {
