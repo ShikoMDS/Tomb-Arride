@@ -1,10 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Reuben_room_control",
-  "spriteId": null,
+  "name": "obj_reuben_room_control",
+  "spriteId": {
+    "name": "spr_disco_control",
+    "path": "sprites/spr_disco_control/spr_disco_control.yy",
+  },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

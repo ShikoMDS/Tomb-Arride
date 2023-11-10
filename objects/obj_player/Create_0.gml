@@ -17,6 +17,8 @@ ammo = ammo_max;
 ammo_regen = 0;
 ammo_regen_time = 120;
 
+anim_index = 0;
+
 move_spd = 2;
 
 depth = -12;

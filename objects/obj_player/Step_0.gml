@@ -66,7 +66,6 @@ if (!game_paused)
 		image_speed = 1;
 	}
 
-
 	if (mouse_check_button(mb_left) && b_can_shoot && ammo > 0)
 	{
 		instance_create_layer(x, y + 3, "Instances", obj_bullet);
@@ -90,6 +89,15 @@ if (!game_paused)
 			ammo++;
 			ammo_regen = 0;
 		}
+	}
+	
+	if (place_meeting(x, y, obj_teleport_parent))
+	{
+		anim_index += 0.15;
+	}
+	else
+	{
+		anim_index = 0;
 	}
 	
 	if (hp <= 0)
