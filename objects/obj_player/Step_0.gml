@@ -111,22 +111,6 @@ if (!game_paused)
 			}
 		}
 	}
-	
-	if (!invincible)
-	{
-		if (place_meeting(x, y, obj_enemy))
-		{
-			if (hp >= 1)
-			{
-				hp--;
-			}
-			
-			audio_play_sound(snd_player_hit, 1, false, 1, 0, random_range(0.75, 1.25));
-			
-			invincible = true;
-			alarm[1] = invincibility_time;
-		}
-	}
 }
 
 if (game_paused)

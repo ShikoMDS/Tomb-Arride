@@ -39,6 +39,29 @@ if (!game_paused)
 		image_xscale = -1;
 	}
 	
+	//damage player
+	if (!dying && !b_shot)
+	{
+		if (instance_exists(obj_player))
+		{
+			if (place_meeting(x, y, obj_player) && obj_player.invincible == false)
+			{
+				with (obj_player)
+				{
+					if (hp >= 1)
+					{
+						hp--;
+					}
+			
+					audio_play_sound(snd_player_hit, 1, false, 1, 0, random_range(0.75, 1.25));
+			
+					invincible = true;
+					alarm[1] = invincibility_time;
+				}
+			}
+		}
+	}
+	
 	var _box = instance_nearest(x, y, obj_box);
 	
 	if (place_meeting(x - box_range, y, _box))
