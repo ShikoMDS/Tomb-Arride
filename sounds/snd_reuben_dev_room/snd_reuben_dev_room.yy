@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_ReubenDevRoom",
+  "name": "snd_reuben_dev_room",
   "conversionMode": 0,
   "compression": 0,
   "volume": 0.25,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_ReubenDevRoom.mp3",
+  "soundFile": "snd_reuben_dev_room.mp3",
   "duration": 262.89633,
   "parent": {
     "name": "Sounds",
