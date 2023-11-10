@@ -1,5 +1,6 @@
 coins = 0;
 goals_completed = 0;
+global.volume_percent = 25.0;
 
 //Holds level completion data
 global.level_data = {
