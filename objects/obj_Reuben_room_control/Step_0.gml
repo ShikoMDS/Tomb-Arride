@@ -1,7 +1,7 @@
 
 
 
-if(obj_player.x >= 704)
+if(place_meeting(x, y, obj_player))
 {
 	if (audio_is_playing(snd_background_music)) 
 	{

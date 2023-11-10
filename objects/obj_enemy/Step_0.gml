@@ -2,15 +2,15 @@ if (!game_paused)
 {
 	if (instance_exists(obj_player))
 	{
-		if (b_shot == false && dying == false)
+		if (shot == false && dying == false)
 		{
 			if (!collision_line(x, y, obj_player.x, obj_player.y, obj_collision_parent, false, false))
 			{
-				b_player_seen = true
+				player_seen = true
 			}
 			else
 			{
-				b_player_seen = false;
+				player_seen = false;
 				if (choose_direction_timer_tick <= 0)
 				{
 					mp_potential_step(range_x, range_y, 0.5, false);
@@ -21,7 +21,7 @@ if (!game_paused)
 				choose_direction_timer_tick--;
 			}
 
-			if (b_player_seen == true)
+			if (player_seen == true)
 			{
 				mp_potential_step(obj_player.x, obj_player.y, 0.5, false);
 			}
@@ -40,7 +40,7 @@ if (!game_paused)
 	}
 	
 	//damage player
-	if (!dying && !b_shot)
+	if (!dying && !shot)
 	{
 		if (instance_exists(obj_player))
 		{
@@ -68,7 +68,7 @@ if (!game_paused)
 	{
 		if (_box.direction == 0 && _box.speed > 0)
 		{
-			b_shot = true;
+			shot = true;
 			
 			direction = 0;
 			speed = 2;
@@ -78,6 +78,8 @@ if (!game_paused)
 			
 			//Resets movement speed to 0
 			alarm[2] = 20;
+			
+			sliding = true;
 		}
 	}
 	
@@ -85,7 +87,7 @@ if (!game_paused)
 	{
 		if (_box.direction == 180 && _box.speed > 0)
 		{
-			b_shot = true;
+			shot = true;
 			
 			direction = 180;
 			speed = 2;
@@ -95,6 +97,8 @@ if (!game_paused)
 			
 			//Resets movement speed to 0
 			alarm[2] = 20;
+			
+			sliding = true;
 		}
 	}
 	
@@ -102,7 +106,7 @@ if (!game_paused)
 	{
 		if (_box.direction == 270 && _box.speed > 0)
 		{
-			b_shot = true;
+			shot = true;
 			
 			direction = 270;
 			speed = 2;
@@ -112,6 +116,8 @@ if (!game_paused)
 			
 			//Resets movement speed to 0
 			alarm[2] = 20;
+			
+			sliding = true;
 		}
 	}
 	
@@ -119,22 +125,27 @@ if (!game_paused)
 	{
 		if (_box.direction == 90 && _box.speed > 0)
 		{
-			b_shot = true;
+			shot = true;
 			
 			direction = 90;
 			speed = 2;
 			
 			//Resets shot state
-			alarm[1] = 20;
+			if (alarm[1] < 20)
+			{
+				alarm[1] = 20;
+			}
 			
 			//Resets movement speed to 0
 			alarm[2] = 20;
+			
+			sliding = true;
 		}
 	}
 
 
 //Wall detection when sliding
-	if (speed > 0)
+	if (sliding)
 	{
 		if (direction == 0)
 		{

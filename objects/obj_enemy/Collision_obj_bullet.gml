@@ -1,5 +1,5 @@
 
-b_shot = true;
+shot = true;
 image_index = 1;
 alarm[1] = 5 * 60;
 

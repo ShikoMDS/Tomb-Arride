@@ -1,6 +1,6 @@
 #region//Box Movement Code
 
-if (place_snapped(16,16))
+if (place_snapped(16, 16))
 {
 	speed = 0;
 }
@@ -42,6 +42,7 @@ if (!box_locked)
 if (place_meeting(x, y, obj_goal_parent))
 {
 	box_locked = true;
+	image_index = 1;
 }
 
 #endregion

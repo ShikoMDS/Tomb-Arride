@@ -417,6 +417,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AE2D395","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":584.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44225DD7","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":152.0,"y":584.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2871CFD8","properties":[],"isDnd":false,"objectId":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":152.0,"y":712.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1B147E4B","properties":[],"isDnd":false,"objectId":{"name":"obj_disco_room_control","path":"objects/obj_disco_room_control/obj_disco_room_control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":19.0,"scaleY":8.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1208.0,"y":64.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"DiscoInstance","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64CA9A2B","properties":[],"isDnd":false,"objectId":{"name":"obj_disco_floor","path":"objects/obj_disco_floor/obj_disco_floor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1104.0,"y":40.0,},
@@ -891,6 +892,7 @@
     {"name":"inst_7AE2D395","path":"rooms/rm_level_six/rm_level_six.yy",},
     {"name":"inst_44225DD7","path":"rooms/rm_level_six/rm_level_six.yy",},
     {"name":"inst_2871CFD8","path":"rooms/rm_level_six/rm_level_six.yy",},
+    {"name":"inst_1B147E4B","path":"rooms/rm_level_six/rm_level_six.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
