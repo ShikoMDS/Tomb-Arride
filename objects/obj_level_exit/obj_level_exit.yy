@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_level_exit",
   "spriteId": {
-    "name": "spr_level_exit",
-    "path": "sprites/spr_level_exit/spr_level_exit.yy",
+    "name": "spr_exit_locked",
+    "path": "sprites/spr_exit_locked/spr_exit_locked.yy",
   },
   "solid": false,
   "visible": true,

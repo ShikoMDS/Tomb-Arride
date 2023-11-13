@@ -2,6 +2,7 @@
 
 if (unlocked)
 {
+	sprite_index = spr_level_exit;
 	if (instance_exists(obj_player))
 	{
 		if (place_meeting(x, y, obj_player))

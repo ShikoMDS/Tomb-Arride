@@ -119,6 +119,16 @@ if (!game_paused)
 			}
 		}
 	}
+	
+	if (teleporting)
+	{
+		invincible = true;
+		alarm[1] = invincibility_time * 2;
+	}
+	else
+	{
+		teleporting = false;
+	}
 }
 
 if (game_paused)

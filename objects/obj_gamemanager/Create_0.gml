@@ -43,6 +43,8 @@ game_paused = false;
 globalvar tutorial_number;
 tutorial_number = 1;
 
+globalvar teleporting;
+teleporting = false;
 
 #endregion
 
