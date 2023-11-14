@@ -62,6 +62,184 @@ if (!game_paused)
 		}
 	}
 	
+	//var _box = instance_nearest(x, y, obj_box);
+	
+	//if (place_meeting(x - box_range, y, _box))
+	//{
+	//	if (_box.direction == 0 && _box.speed > 0)
+	//	{
+	//		shot = true;
+			
+	//		direction = 0;
+	//		speed = 2;
+			
+	//		//Resets shot state
+	//		alarm[1] = 20;
+			
+	//		//Resets movement speed to 0
+	//		alarm[2] = 20;
+			
+	//		sliding = true;
+	//	}
+	//}
+	
+	//if (place_meeting(x + box_range, y, _box))
+	//{
+	//	if (_box.direction == 180 && _box.speed > 0)
+	//	{
+	//		shot = true;
+			
+	//		direction = 180;
+	//		speed = 2;
+			
+	//		//Resets shot state
+	//		alarm[1] = 20;
+			
+	//		//Resets movement speed to 0
+	//		alarm[2] = 20;
+			
+	//		sliding = true;
+	//	}
+	//}
+	
+	//if (place_meeting(x, y - box_range, _box))
+	//{
+	//	if (_box.direction == 270 && _box.speed > 0)
+	//	{
+	//		shot = true;
+			
+	//		direction = 270;
+	//		speed = 2;
+			
+	//		//Resets shot state
+	//		alarm[1] = 20;
+			
+	//		//Resets movement speed to 0
+	//		alarm[2] = 20;
+			
+	//		sliding = true;
+	//	}
+	//}
+	
+	//if (place_meeting(x, y + box_range, _box))
+	//{
+	//	if (_box.direction == 90 && _box.speed > 0)
+	//	{
+	//		shot = true;
+			
+	//		direction = 90;
+	//		speed = 2;
+			
+	//		//Resets shot state
+	//		if (alarm[1] < 20)
+	//		{
+	//			alarm[1] = 20;
+	//		}
+			
+	//		//Resets movement speed to 0
+	//		alarm[2] = 20;
+			
+	//		sliding = true;
+	//	}
+	//}
+
+
+////Wall detection when sliding
+//	if (sliding)
+//	{
+//		if (direction == 0)
+//		{
+//			if (place_meeting(x + 1, y, obj_collision_parent))
+//			{
+//				dying = true;
+//			}
+//		}
+		
+//		if (direction == 180)
+//		{
+//			if (place_meeting(x - 1, y, obj_collision_parent))
+//			{
+//				dying = true;
+//			}
+//		}
+		
+//		if (direction == 270)
+//		{
+//			if (place_meeting(x, y + 1, obj_collision_parent))
+//			{
+//				dying = true;
+//			}
+//		}
+		
+//		if (direction == 90)
+//		{
+//			if (place_meeting(x, y - 1, obj_collision_parent))
+//			{
+//				dying = true;
+//			}
+//		}
+//	}
+//}
+
+
+
+
+////////////////////////////////////////////////////////////////
+
+}
+if (dying = true)
+{
+	sprite_index = spr_mummy_death;
+
+	if (!audio_is_playing(snd_squish))
+	{
+		audio_play_sound(snd_squish, 1, false, 1, 0, random_range(0.75, 1.25));
+	}
+
+	if (image_index > 7)
+	{
+		instance_destroy();
+	}
+}
+
+//if (place_meeting(x + 5, y, obj_box))
+//{
+//	if (place_meeting(x - 5, y, obj_wall))
+//	{
+//		instance_destroy();
+//	}
+//}
+
+//if (place_meeting(x - 5, y, obj_box))
+//{
+//	if (place_meeting(x + 5, y, obj_wall))
+//	{
+//		instance_destroy();
+//	}
+//}
+
+//if (place_meeting(x, y + 5, obj_box))
+//{
+//	if (place_meeting(x - 5, y, obj_wall))
+//	{
+//		instance_destroy();
+//	}
+//}
+
+//if (place_meeting(x, y - 5, obj_box))
+//{
+//	if (place_meeting(x - 5, y, obj_wall))
+//	{
+//		instance_destroy();
+//	}
+//}
+
+
+
+/////////////////////////////////////////////
+
+
+
 	var _box = instance_nearest(x, y, obj_box);
 	
 	if (place_meeting(x - box_range, y, _box))
@@ -73,13 +251,21 @@ if (!game_paused)
 			direction = 0;
 			speed = 2;
 			
-			//Resets shot state
-			alarm[1] = 20;
+			if (place_empty(x + box_range, y, obj_collision_parent))
+			{
+				//Resets shot state
+				alarm[1] = 20;
 			
-			//Resets movement speed to 0
-			alarm[2] = 20;
+				//Resets movement speed to 0
+				alarm[2] = 20;
 			
-			sliding = true;
+				sliding = true;
+			}
+			else
+			{
+				dying = true;
+			}
+			
 		}
 	}
 	
@@ -92,13 +278,20 @@ if (!game_paused)
 			direction = 180;
 			speed = 2;
 			
-			//Resets shot state
-			alarm[1] = 20;
+			if (place_empty(x - box_range, y, obj_collision_parent))
+			{
+				//Resets shot state
+				alarm[1] = 20;
 			
-			//Resets movement speed to 0
-			alarm[2] = 20;
+				//Resets movement speed to 0
+				alarm[2] = 20;
 			
-			sliding = true;
+				sliding = true;
+			}
+			else
+			{
+				dying = true;
+			}
 		}
 	}
 	
@@ -111,13 +304,20 @@ if (!game_paused)
 			direction = 270;
 			speed = 2;
 			
-			//Resets shot state
-			alarm[1] = 20;
+			if (place_empty(x, y + box_range, obj_collision_parent))
+			{
+				//Resets shot state
+				alarm[1] = 20;
 			
-			//Resets movement speed to 0
-			alarm[2] = 20;
+				//Resets movement speed to 0
+				alarm[2] = 20;
 			
-			sliding = true;
+				sliding = true;
+			}
+			else
+			{
+				dying = true;
+			}
 		}
 	}
 	
@@ -136,63 +336,19 @@ if (!game_paused)
 				alarm[1] = 20;
 			}
 			
-			//Resets movement speed to 0
-			alarm[2] = 20;
+			if (place_empty(x, y - box_range, obj_collision_parent))
+			{
+				//Resets shot state
+				alarm[1] = 20;
 			
-			sliding = true;
-		}
-	}
-
-
-//Wall detection when sliding
-	if (sliding)
-	{
-		if (direction == 0)
-		{
-			if (place_meeting(x + 1, y, obj_collision_parent))
-			{
-				dying = true;
+				//Resets movement speed to 0
+				alarm[2] = 20;
+			
+				sliding = true;
 			}
-		}
-		
-		if (direction == 180)
-		{
-			if (place_meeting(x - 1, y, obj_collision_parent))
-			{
-				dying = true;
-			}
-		}
-		
-		if (direction == 270)
-		{
-			if (place_meeting(x, y + 1, obj_collision_parent))
-			{
-				dying = true;
-			}
-		}
-		
-		if (direction == 90)
-		{
-			if (place_meeting(x, y - 1, obj_collision_parent))
+			else
 			{
 				dying = true;
 			}
 		}
 	}
-}
-
-
-if (dying = true)
-{
-	sprite_index = spr_mummy_death;
-
-	if (!audio_is_playing(snd_squish))
-	{
-		audio_play_sound(snd_squish, 1, false, 1, 0, random_range(0.75, 1.25));
-	}
-
-	if (image_index > 7)
-	{
-		instance_destroy();
-	}
-}

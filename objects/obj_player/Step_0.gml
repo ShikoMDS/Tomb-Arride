@@ -143,3 +143,28 @@ if (game_paused)
 	audio_stop_sound(snd_shoot);
 	audio_stop_sound(snd_squish);
 }
+
+
+
+///////////////////////////////////////////////////////////
+
+if (hp == 5) // 1,2 frames
+{
+	image_index = (max(0, image_index % 2));
+}
+if (hp == 4) // 5,6 frames
+{
+	image_index = (max(4, image_index % 6));
+}
+if (hp == 3) // 9,10 frames
+{
+	image_index = (max(8, image_index % 10));
+}
+if (hp == 2) // 13,14 frames
+{
+	image_index = (max(12, image_index % 14));
+}
+if (hp == 1) // 17,18 frames
+{
+	image_index = (max(16, image_index % 18));
+}
