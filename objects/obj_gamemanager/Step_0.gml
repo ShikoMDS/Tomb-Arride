@@ -79,7 +79,7 @@ if (room != rm_menu && room != rm_controls && room != rm_credits)
 
 #region//Music Control
 
-if (room != rm_level_select)
+if (room != rm_level_select && room != rm_level_six && room != rm_level_eight)
 {
 	if (audio_is_playing(snd_dance_music)) audio_stop_sound(snd_dance_music);
 }
