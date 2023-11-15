@@ -2,6 +2,7 @@ coins = 0;
 goals_completed = 0;
 global.volume_percent = 25.0;
 
+
 //Holds level completion data
 global.level_data = {
 	level_01: {complete: false, damage: false, coins: false},
@@ -42,9 +43,6 @@ game_paused = false;
 
 globalvar tutorial_number;
 tutorial_number = 1;
-
-globalvar teleporting;
-teleporting = false;
 
 #endregion
 

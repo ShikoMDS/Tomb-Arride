@@ -7,5 +7,7 @@ if (place_meeting(x, y, obj_player))
 	
 	audio_play_sound(snd_player_teleport, 1, 0);
 	
-	teleporting = true;
+	obj_player.invincible = true;
+	
+	obj_player.alarm[1] = obj_player.invincibility_time;
 }
