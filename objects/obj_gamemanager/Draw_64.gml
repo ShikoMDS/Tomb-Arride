@@ -4,7 +4,7 @@ if (!game_paused)
 	{
 		draw_coin_score();
 		
-		if (room != rm_tutorial_1 && room != rm_tutorial_2 && room != rm_tutorial_3)
+		if (room != rm_tutorial_1 && room != rm_tutorial_2)
 		{
 			var _x = display_get_gui_width() - 32;
 			var _scale = 4;

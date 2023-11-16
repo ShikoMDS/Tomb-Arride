@@ -17,6 +17,6 @@ if (text_num == 4)
 
 if (text_num == 5) text = "Slots are also tied to broken walls";
 if (text_num == 6) text = "Once a box is in a slot the respective walls will break";
-if (text_num == 6) text = "While next to a box press space to push it";
+if (text_num == 6) text = "While next to a box press SPACE to push it";
 if (text_num == 8) text = "Try pushing this box into the slot";
 if (text_num == 9) text = "Stand on the exit to proceed to the next level!";

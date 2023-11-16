@@ -16,5 +16,29 @@ if (text_num == 5)
 	}
 }
 
-if (text_num == 6) text = "Don't let the mummy kill you";
+if (text_num == 6) text = "If a mummy can't see you it will stop chasing you";
 if (text_num == 7) text = "Stand on the teleporter to proceed";
+if (text_num == 8) text = "Teleporters work both ways";
+if (text_num == 9) text = "In each level there are coins some may be hidden";
+if (text_num == 10) text = "You should aim to collect all coins in each level";
+
+if (text_num == 11)
+{
+	text = "Try finding all the coins in the next room!";
+	
+	with (obj_tutorial_wall_03)
+	{
+		image_speed = 1;
+	}
+	
+}
+
+if (text_num == 12) text = "The exit will open when you have all the coins";
+
+if (!instance_exists(obj_coin))
+{
+	with (obj_tutorial_wall_04)
+	{
+		image_speed = 1;
+	}
+}

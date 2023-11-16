@@ -16,10 +16,13 @@ if (!game_paused)
 	{
 		var _text = instance_nearest(x, y, obj_tutorial_text_parent).text;
 	
-		var _scale = 0.15;
+		var _scale = 0.5;
 	
 		draw_set_color(c_white);
 		draw_set_halign(fa_center);
+		
+		draw_set_color(c_yellow);
+		draw_set_font(fnt_mulish);
 	
 		draw_text_transformed(x, y - 20, _text, _scale, _scale, 0);
 	}

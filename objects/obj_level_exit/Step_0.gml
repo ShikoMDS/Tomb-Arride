@@ -11,7 +11,7 @@ if (unlocked)
 			obj_player.x = x;
 			obj_player.y = y;
 			
-			if (room != rm_tutorial_1 && room != rm_tutorial_2 && room != rm_tutorial_3)
+			if (room != rm_tutorial_1 && room != rm_tutorial_2)
 			{
 				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
 				{
@@ -19,7 +19,7 @@ if (unlocked)
 					colour = c_black;	
 				}
 			}
-			else if (room == rm_tutorial_1 || room == rm_tutorial_2)
+			else if (room == rm_tutorial_1)
 			{
 				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
 				{
@@ -27,7 +27,7 @@ if (unlocked)
 					colour = c_black;	
 				}
 			}
-			else if (room == rm_tutorial_3)
+			else if (room == rm_tutorial_2)
 			{
 				with (instance_create_layer(0, 0, "Instances", obj_fade_control))
 				{
