@@ -4,6 +4,9 @@ if (!game_paused)
 	{
 		if (shot == false && dying == false)
 		{
+			image_index = (max(0, image_index % 3));
+			
+			
 			if (!collision_line(x, y, obj_player.x, obj_player.y, obj_collision_parent, false, false))
 			{
 				player_seen = true
@@ -51,6 +54,7 @@ if (!game_paused)
 					if (hp >= 1)
 					{
 						hp--;
+						screenshake(20,0.1,1);
 					}
 			
 					audio_play_sound(snd_player_hit, 1, false, 1, 0, random_range(0.75, 1.25));
@@ -62,129 +66,7 @@ if (!game_paused)
 		}
 	}
 	
-	//var _box = instance_nearest(x, y, obj_box);
-	
-	//if (place_meeting(x - box_range, y, _box))
-	//{
-	//	if (_box.direction == 0 && _box.speed > 0)
-	//	{
-	//		shot = true;
-			
-	//		direction = 0;
-	//		speed = 2;
-			
-	//		//Resets shot state
-	//		alarm[1] = 20;
-			
-	//		//Resets movement speed to 0
-	//		alarm[2] = 20;
-			
-	//		sliding = true;
-	//	}
-	//}
-	
-	//if (place_meeting(x + box_range, y, _box))
-	//{
-	//	if (_box.direction == 180 && _box.speed > 0)
-	//	{
-	//		shot = true;
-			
-	//		direction = 180;
-	//		speed = 2;
-			
-	//		//Resets shot state
-	//		alarm[1] = 20;
-			
-	//		//Resets movement speed to 0
-	//		alarm[2] = 20;
-			
-	//		sliding = true;
-	//	}
-	//}
-	
-	//if (place_meeting(x, y - box_range, _box))
-	//{
-	//	if (_box.direction == 270 && _box.speed > 0)
-	//	{
-	//		shot = true;
-			
-	//		direction = 270;
-	//		speed = 2;
-			
-	//		//Resets shot state
-	//		alarm[1] = 20;
-			
-	//		//Resets movement speed to 0
-	//		alarm[2] = 20;
-			
-	//		sliding = true;
-	//	}
-	//}
-	
-	//if (place_meeting(x, y + box_range, _box))
-	//{
-	//	if (_box.direction == 90 && _box.speed > 0)
-	//	{
-	//		shot = true;
-			
-	//		direction = 90;
-	//		speed = 2;
-			
-	//		//Resets shot state
-	//		if (alarm[1] < 20)
-	//		{
-	//			alarm[1] = 20;
-	//		}
-			
-	//		//Resets movement speed to 0
-	//		alarm[2] = 20;
-			
-	//		sliding = true;
-	//	}
-	//}
 
-
-////Wall detection when sliding
-//	if (sliding)
-//	{
-//		if (direction == 0)
-//		{
-//			if (place_meeting(x + 1, y, obj_collision_parent))
-//			{
-//				dying = true;
-//			}
-//		}
-		
-//		if (direction == 180)
-//		{
-//			if (place_meeting(x - 1, y, obj_collision_parent))
-//			{
-//				dying = true;
-//			}
-//		}
-		
-//		if (direction == 270)
-//		{
-//			if (place_meeting(x, y + 1, obj_collision_parent))
-//			{
-//				dying = true;
-//			}
-//		}
-		
-//		if (direction == 90)
-//		{
-//			if (place_meeting(x, y - 1, obj_collision_parent))
-//			{
-//				dying = true;
-//			}
-//		}
-//	}
-//}
-
-
-
-
-////////////////////////////////////////////////////////////////
 
 }
 if (dying = true)
@@ -201,43 +83,6 @@ if (dying = true)
 		instance_destroy();
 	}
 }
-
-//if (place_meeting(x + 5, y, obj_box))
-//{
-//	if (place_meeting(x - 5, y, obj_wall))
-//	{
-//		instance_destroy();
-//	}
-//}
-
-//if (place_meeting(x - 5, y, obj_box))
-//{
-//	if (place_meeting(x + 5, y, obj_wall))
-//	{
-//		instance_destroy();
-//	}
-//}
-
-//if (place_meeting(x, y + 5, obj_box))
-//{
-//	if (place_meeting(x - 5, y, obj_wall))
-//	{
-//		instance_destroy();
-//	}
-//}
-
-//if (place_meeting(x, y - 5, obj_box))
-//{
-//	if (place_meeting(x - 5, y, obj_wall))
-//	{
-//		instance_destroy();
-//	}
-//}
-
-
-
-/////////////////////////////////////////////
-
 
 
 	var _box = instance_nearest(x, y, obj_box);
@@ -352,3 +197,8 @@ if (dying = true)
 			}
 		}
 	}
+
+if (shot)
+{
+	image_index = 4;	
+}

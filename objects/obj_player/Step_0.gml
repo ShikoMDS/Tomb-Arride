@@ -134,10 +134,6 @@ if (game_paused)
 	audio_stop_sound(snd_squish);
 }
 
-
-
-///////////////////////////////////////////////////////////
-
 if (hp == 5) // 1,2 frames
 {
 	image_index = (max(0, image_index % 2));
