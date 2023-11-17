@@ -15,3 +15,5 @@ sliding = false;
 box_range = 10;
 
 dying = false;
+
+killed = false;

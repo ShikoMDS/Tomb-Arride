@@ -54,7 +54,6 @@ if (!game_paused)
 					if (hp >= 1)
 					{
 						hp--;
-						screenshake(20,0.1,1);
 					}
 			
 					audio_play_sound(snd_player_hit, 1, false, 1, 0, random_range(0.75, 1.25));
@@ -72,16 +71,16 @@ if (!game_paused)
 if (dying = true)
 {
 	sprite_index = spr_mummy_death;
+	image_speed = 10;
 
 	if (!audio_is_playing(snd_squish))
 	{
 		audio_play_sound(snd_squish, 1, false, 1, 0, random_range(0.75, 1.25));
 	}
+	
 
-	if (image_index > 7)
-	{
-		instance_destroy();
-	}
+	instance_destroy();
+	
 }
 
 
